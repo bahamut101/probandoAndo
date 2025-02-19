@@ -14,7 +14,7 @@ def subeVideo(palabra):
     # Crear una carpeta "videos" si no existe
     os.makedirs("videos", exist_ok=True)
 
-    st.title("Sube un video y guárdalo en el disco")
+    st.title("Sube un video y guárdalo")
 
     # Usar el file uploader para que el usuario seleccione un archivo
     uploaded_file = st.file_uploader("Elige un archivo de video", type=["mp4", "avi", "mov", "mkv"])
@@ -55,7 +55,7 @@ def grabaVideo(palabra):
     while cap.isOpened():
         ret, frame = cap.read()
         if not ret:
-            break
+            break 
 
         # Muestra el video en Streamlit
         st.image(frame, channels="BGR", use_column_width=True)
