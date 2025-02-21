@@ -13,7 +13,7 @@ def subeVideo(palabra):
     # Crear una carpeta "videos" si no existe
     os.makedirs("videos", exist_ok=True)
 
-    st.title("Sube un video y guárdalo")
+    st.title("Sube un video y  guárdalo")
 
     # Usar el file uploader para que el usuario seleccione un archivo
     uploaded_file = st.file_uploader("Elige un archivo de video", type=["mp4", "avi", "mov", "mkv"])
